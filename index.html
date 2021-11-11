@@ -2,9 +2,57 @@
  <html>
     <head>
         <meta charset="utf-8">
-        <title>Hello, World!</title>
+        <title>"Wilson's Website</title>
+        <style>
+            h1 {
+                font-family: "Fantasy", "Copperplate";
+                color:blue;
+                border: 2px solid white;
+                border-radius: 5px;
+                }
+            body {
+                background-image: url("background.gif");
+                object-fit: fill;
+            }
+            p1{
+                color:white;
+            }
+            @keyframes one {
+                0%   {background-color: red;}
+                25%  {background-color: yellow;}
+                50%  {background-color: blue;}
+                100% {background-color: green;}
+            }
+            a{
+                color:black;
+                border: 2px solid blue;
+                border-radius: 5px;
+                border-style: ridge;
+                animation-name: one;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                font-size: 40px;
+            }
+            hr.dashed {
+                border-top: 3px dashed #bbb;
+            }
+
+
+        </style>
+        <h1><center>Wilson Schwegler</center></h1>
     </head>
     <body>
-        Hello, World!
+        <p1><center>I attend Occidental College in the class of 2025.</center></p1>
+        <hr class="dashed">
+        <div style="margin-left:auto;margin-right:auto;text-align:center">
+            <a href="https://twitter.com/schweglerwilson">Twitter</a>
+            <a href = "mailto: Schwegler@oxy.edu">Send Email</a>
+        </div>
+        <div style="margin-left:auto;margin-right:auto;text-align:center">
+            <img src="twitter.png" alt="twitter logo" width="130" height="100">
+            <img src="email.png" alt="email logo" width="130" height="100">
+        </div>
+
+
     </body>
  </html>
